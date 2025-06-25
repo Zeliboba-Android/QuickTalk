@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to_quicktalk">Welcome to QuickTalk</string>
+    <string name="write_email">Write email</string>
+    <string name="registration">registration</string>
+    <string name="registration_upper">Registration</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create account</string>
+    <string name="send_message">Send message</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="the_reset_link_sent">The reset link has been successfully sent</string>
+    <string name="john_smith_27">John Smith, 27</string>
+    <string name="type_your_message">Type your message:</string>
+    <string name="play_voice_message">Воспроизвести голосовое сообщение</string>
+</resources>

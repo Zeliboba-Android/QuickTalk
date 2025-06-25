@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:windowSoftInputMode="adjustResize"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TV_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_upper"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/ET_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/ET_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ET_name"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ET_last_name"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/ET_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/password"
+
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ET_email"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

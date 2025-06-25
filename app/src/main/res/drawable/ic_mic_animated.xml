@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние "не записывает" -->
+    <item
+        android:id="@+id/state_normal"
+        android:drawable="@drawable/ic_mic"
+        android:state_selected="false"
+        android:state_pressed="false"/>
+
+    <!-- Состояние "записывает" -->
+    <item
+        android:id="@+id/state_recording"
+        android:drawable="@drawable/ic_mic_recording"/>
+
+    <!-- Анимация перехода к записи -->
+    <transition
+        android:fromId="@id/state_normal"
+        android:toId="@id/state_recording">
+        <animation-list android:oneshot="true">
+            <item android:duration="100" android:drawable="@drawable/ic_mic_frame1"/>
+            <item android:duration="100" android:drawable="@drawable/ic_mic_frame2"/>
+        </animation-list>
+    </transition>
+
+    <!-- Анимация возврата к нормальному состоянию -->
+    <transition
+        android:fromId="@id/state_recording"
+        android:toId="@id/state_normal">
+        <animation-list android:oneshot="true">
+            <item android:duration="100" android:drawable="@drawable/ic_mic_frame2"/>
+            <item android:duration="100" android:drawable="@drawable/ic_mic_frame1"/>
+        </animation-list>
+    </transition>
+</animated-selector>
